@@ -32,7 +32,7 @@ public class UserRegistrationTest {
  @Test
  public void givenPassword_whenProper_shouldReturnTrue(){
   UserRegistration registration = new UserRegistration();
-  boolean result = registration.password("haiagfjLKN");
+  boolean result = registration.password("bfkajbHK%$98");
   Assertions.assertEquals(true,result);
  }
 }

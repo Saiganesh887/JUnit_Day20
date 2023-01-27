@@ -25,7 +25,7 @@ public class UserRegistration {
 
 
     public boolean password(String uPassword) {
-        Pattern pattern = Pattern.compile("^(?=.*[A-Z])[a-zA-z]{8,}$");
+        Pattern pattern = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\\W)(?!.* ).{8,16}$");
         return pattern.matcher(uPassword).matches();
     }
 }
