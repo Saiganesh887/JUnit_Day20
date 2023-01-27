@@ -28,4 +28,11 @@ public class UserRegistrationTest {
   boolean result = registration.mobileNumber("91 9927658326");
   Assertions.assertEquals(true,result);
  }
+
+ @Test
+ public void givenPassword_whenProper_shouldReturnTrue(){
+  UserRegistration registration = new UserRegistration();
+  boolean result = registration.password("Haigagfj");
+  Assertions.assertEquals(true,result);
+ }
 }

@@ -23,4 +23,9 @@ public class UserRegistration {
         return pattern.matcher(mobileNum).matches();
     }
 
+
+    public boolean password(String uPassword) {
+        Pattern pattern = Pattern.compile("^[a-zA-z]{8}$");
+        return pattern.matcher(uPassword).matches();
+    }
 }
